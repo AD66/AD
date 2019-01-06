@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>
+Uploading file
+  </title>
+<style>
+label[for="file-upload"]{
+  padding:0.5em;
+  display:inline-block;
+  background:darken($purple ,20%);
+  cursor:pointer;
+  &:hover{background:darken($purple ,17%)}
+}
+p{
+        text-align: center;
+}
+form{
+        text-align: center;
+        border: center;
+}
+body{background:$purple;color:$white;font-family:lato,sans-serif;text-align:center;margin:10% auto;display: table;}
+</style>
+
+</head>
+
+<body>
+<p>You can upload any file<p>
+  <form action="/home/vkumar/Documents/Notepad/Notepad++/Html Programs/storage" method="POST" enctype="multipart/form-data">
+   <span id="filename">Select your file</span>
+    <label for="file-upload">Browse<input type="file" id="filename"></label><br>
+<input type='submit' name='submit' value="upload">
+</form>
+</body>
+</html>
